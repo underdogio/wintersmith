@@ -13,7 +13,7 @@ rss(version='2.0',
     pubDate= articles[0].rfc822date
     generator Wintersmith - https://github.com/jnordberg/wintersmith
     language en
-    for article in articles
+    each article in articles
       - var permalink = locals.url + article.url;
       item
         title= article.title
